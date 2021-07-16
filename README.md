@@ -1,4 +1,8 @@
 # Step 0: Pre-installation actions
+## Remove existing NVIDIA/cuda drivers
+`watch "dpkg -l | grep nvidia"
+`
+`sudo dpkg --force-all -P <PACKAGE>`
 ## Verify CUDA-capable GPUs, gcc installation, Linux versions
 `lspci | grep -i nvidia`
 
