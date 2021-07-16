@@ -36,3 +36,5 @@ newgrp microk8s
 ```
 ## Check if k8s is ready
 `microk8s status --wait-ready`
+
+microk8s enable kubeflow --bundle=cs:kubeflow
