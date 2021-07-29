@@ -38,3 +38,9 @@ newgrp microk8s
 `microk8s status --wait-ready`
 
 microk8s enable kubeflow --bundle=cs:kubeflow
+
+```bash
+microk8s juju config dex-auth static-username
+microk8s juju config dex-auth static-password
+
+```
